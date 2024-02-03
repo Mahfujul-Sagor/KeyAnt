@@ -405,6 +405,7 @@ body {
 .product-section-1 {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   position: relative;
   padding: 6rem 3rem;
@@ -451,3 +452,93 @@ body {
   transform: scale(1.05);
 }
 
+.new-stock {
+  width: 80vw;
+  margin-left: 11rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.new-stock-heading {
+  font-size: 3rem;
+}
+
+.new-stock-text {
+  display: inline-block;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btn {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff5;
+  font-weight: 700;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: dimgray;
+  transition: 0.2s;
+  color: whitesmoke;
+}
+
+.new-stock-text:hover {
+  text-decoration: underline;
+}
+
+.new-stock-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-image {
+  height: 21rem;
+  width: 23rem;
+  background-size: cover;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+
+.new-product-info {
+  width: 21rem;
+  height: 6.75rem;
+  padding: 1rem;
+}
+
+.new-product {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  background-color: whitesmoke;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-title {
+  font-weight: 700;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.box-image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box:hover {
+  .box-image {
+    opacity: 0;
+  }
+}
